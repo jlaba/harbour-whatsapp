@@ -117,7 +117,7 @@ D=/usr/share/applications/harbour-whatsapp.desktop
 if [ ! -s $D ] || ! grep -q '^\[Desktop Entry\]' $D; then
   # Erteilte Rechte retten, falls noch etwas lesbar ist
   PSAVE=$(sed -n 's/^Permissions=//p' $D 2>/dev/null | head -1)
-  [ -z "$PSAVE" ] && PSAVE="Internet;Secrets;"
+  [ -z "$PSAVE" ] && PSAVE="Internet;Secrets;Documents;Downloads;Music;Pictures;Videos;"
   cat > $D <<DESKTOPEOF
 [Desktop Entry]
 Type=Application
