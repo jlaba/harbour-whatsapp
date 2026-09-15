@@ -8,7 +8,7 @@ NoDisplay=true
 X-Share-Methods=whatsapp_share;
 
 [X-Sailjail]
-Permissions=Internet;Secrets;
+Permissions=Internet;Secrets;Documents;Downloads;Music;Pictures;Videos;
 OrganizationName=harbour
 ApplicationName=harbour-whatsapp
 
